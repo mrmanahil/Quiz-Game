@@ -1,0 +1,403 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  background: white;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-family: ‘Arial Narrow’, sans-serif;
+  font-weight: 100;
+  font-size: 1.1em;
+  color: black;
+}
+
+span {
+  position: relative;
+  top: 0.63em;  
+  display: inline-block;
+  text-transform: uppercase;  
+  opacity: 0;
+  transform: rotateX(-90deg);
+}
+
+.let1 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 1.2s;
+}
+
+.let2 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 1.3s;
+}
+
+.let3 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 1.4s;
+}
+
+.let4 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 1.5s;
+
+}
+
+.let5 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 1.6s;
+}
+
+.let6 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 1.7s;
+}
+
+.let7 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 1.8s;
+}
+
+@keyframes drop {
+    10% {
+        opacity: 0.5;
+    }
+    20% {
+        opacity: 1;
+        top: 3.78em;
+        transform: rotateX(-360deg);
+    }
+    80% {
+        opacity: 1;
+        top: 3.78em;
+        transform: rotateX(-360deg);
+    }
+    90% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+        top: 6.94em
+    }
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.search_input{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.us-edit-profile .form__group.field {
+  background: #a855f2;
+  border-radius: 20px;
+  padding: 40px;
+}
+.us-edit-profile .img-area .inner-area label {
+  position: fixed;
+  margin-left: 30px;
+}
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 500;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e, #38ef7d);
+  border-image-slice: 1;
+}
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #11998e;
+  font-weight: 700;
+}
+
+/* reset input */
+.form__field:required,
+.form__field:invalid {
+  box-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.login_bg {
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #14315c;
+}
+
+.logn_detail {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logn_detail img {
+  width: 270px;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 auto;
+  display: flex;
+}
+
+.logn_detail .form_field {
+  position: relative;
+  margin: 0 0 20px 0;
+}
+
+.logn_detail .form_field input {
+  width: 100%;
+  background: #f5f4f7;
+  border: 0;
+  height: 55px;
+  padding: 0 46px;
+  border-radius: 10px;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 400;
+  color: #111827;
+  outline: none;
+}
+
+.logn_detail form {
+  width: 100%;
+}
+
+.logn_detail .form_field .icon {
+  position: absolute;
+  top: 18px;
+  left: 16px;
+  color: #a557f2;
+  font-size: 18px;
+}
+
+.logn_detail .form_field input::placeholder {
+  color: #111827;
+}
+
+.logn_detail .link {
+  text-align: center;
+  color: #fff;
+}
+
+.logn_detail .link a {
+  color: rgba(255 255 255 / 70%);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.logn_detail button {
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+  border-radius: 30px;
+  border: 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(270deg, #518589 -70%, #0e53b9 68.5%);
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+.logn_detail .text_last {
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+  margin: 30px 0 0 0;
+}
+
+.logn_detail .title {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.logn_detail .title h3 {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+.logn_detail .title h5 {
+  color: rgba(255 255 255 / 70%);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.logn_detail .form_field .eye {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  color: rgba(17 24 39 / 32%);
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1;
+}
+.logn_detail .form_field .icon {
+  position: absolute;
+  top: 18px;
+  left: 16px;
+  color: #a557f2;
+  font-size: 18px;
+}
