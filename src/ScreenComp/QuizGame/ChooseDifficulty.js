@@ -1,8 +1,21 @@
 import React from "react";
 import { useNavigate } from "react-router";
+import music from "../../sound/Notification.mp3";
 
 const ChooseDifficulty = () => {
   const navigate = useNavigate();
+
+  const easyMode = () => {
+    let audio = new Audio(music);
+    audio.play();
+    navigate("/EasyMode");
+  };
+
+  const hardMode = () => {
+    let audio = new Audio(music);
+    audio.play();
+    navigate("/HardMode");
+  };
 
   return (
     <section className="section-1" id="section-1">
@@ -18,7 +31,7 @@ const ChooseDifficulty = () => {
             className="radio-label jsjwjdwjdwjdwco"
             htmlFor="one-a"
             style={{ height: "5vh" }}
-            onClick={() => navigate("/play")}
+            onClick={() => easyMode()}
           >
             <span className="alphabet text-center">Easy</span> 10 Attempts{" "}
             <img
@@ -32,7 +45,7 @@ const ChooseDifficulty = () => {
           <label
             className="radio-label jsjwjdwjdwjdwco"
             htmlFor="one-a"
-            onClick={() => navigate("/play")}
+            onClick={() => hardMode()}
           >
             <span className="alphabet">Hard:</span> 5 Attempts{" "}
             <img

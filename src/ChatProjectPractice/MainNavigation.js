@@ -9,7 +9,9 @@ import Msd from "../MultiSelectDropdown/Msd";
 import { Composition } from "atomic-layout";
 import PracticeFile from "../ScreenComp/StyledComponents/StyledComponent";
 import QuizGame from "../ScreenComp/QuizGame/QuizGame";
-import PlayGame from "../ScreenComp/QuizGame/PlayGame";
+import EasyMode from "../ScreenComp/QuizGame/EasyMode";
+import HardMode from "../ScreenComp/QuizGame/HardMode";
+import GameResult from "../ScreenComp/QuizGame/GameResult";
 
 const MainNavigation = () => {
   // console.log(selectedId);
@@ -26,7 +28,9 @@ const MainNavigation = () => {
     <>
       <Routes>
         <Route path="/" element={<QuizGame />} />
-        <Route path="/play" element={<PlayGame />} />
+        <Route path="/EasyMode" element={<EasyMode />} />
+        <Route path="/HardMode" element={<HardMode />} />
+        <Route path="/GameResult" element={<GameResult />} />
       </Routes>
     </>
   );
